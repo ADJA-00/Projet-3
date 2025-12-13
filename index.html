@@ -3,69 +3,127 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>PORTFOLIO</title>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    
 </head>
-
+     
 <body>
-    <!--  Barre de navigation -->
-    <nav>
-        <ul>
-            <li><a href="#home">Accueil</a></li>
-            <li><a href="#about">À propos</a></li>
-            <li><a href="#work">Projet</a></li>
-            <li><a href="#resume">CV</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-    <!-- section accueil -->
-     <main>
-         <section id="home">
-            <h1>Bienvenue sur mon Portfolio</h1>
-            <p>Je suis étudiante en développement Web et Intélligence Artificielle.</p>
+    <header>
+       <div>
+          <nav class="nav">
+          <h2 class="logo">Portfolio.</h2>
+            <ul class="nav-link">
+               <li><a href="#home">Accueil</a></li>
+               <li><a href="#about">À propos</a></li>
+               <li><a href="#projects">Projets</a></li>
+               <li><a href="#skills">Compétences</a></li>
+               <li><a href="#contact">Contact</a></li>
+            </ul>
+             
+          </nav>
+       </div>
+    </header>
+    <main>
+
+    <!-- section home -->
+         <section class="home" id="home" ariak-label="Accueil">
+            <div class="home-info">
+               <h1>Adja Fatou Kiné Keita</h1>
+               <h2>Je suis
+                  <span>Développeuse</span>
+                  <span>conceptionniste</span>
+                  <span>Passionnèe</span>
+               </h2>
+
+            <div class="icons">
+                <div class="sci">
+                    <a href="#"><i class='bx bxl-github'></i></a>
+                    <a href="#"><i class='bx bxl-linkedin' ></i></a>
+                    <a href="#"><i class='bx bxl-whatsapp'></i></a>
+                    <a href="#"><i class='bx bxl-twitter'></i></a>
+                </div>
+            </div>
+         </div>
+    
+              
+                <div class="photo-box">
+                    <div class="photo-container"></div>
+                    <image src="photo.jpeg" alt="Mon Portrait" class="photo-img"> 
+              </div>
          </section>
+
     <!-- section à propos -->
          <section id="about">
-            <h2>À propos </h2>
-            <p>Je m'appelle Adja Fatou Kiné KEITA et je suis passionnée par tout ce qui tourne au tour de l'informatique.</p>
+            <h1>À propos de moi</h1>
+            <div>
+              <p>Je suis étudiante en Développement Web et en Intélligence Artificielle</p>
+              <p>Et je suis fascinée par le monde de l'informatique d'une part j'aime codé et découvrir de nouvelles choses</p>
+              <p>Plutard je souhaite devenir une experte dans le domaine et être solliciter pour de grand projets futures qui feront évolué le monde</p>
+            <ul>
+                <li><strong>Localisation:</strong> Sénégal</li>
+                <br>
+                <li><strong>Langues:</strong> Français, Anglais</li>
+            </ul>
+            </div>
         </section>
+
     <!-- section projet -->
-        <section id="Travaux">
-            <h2>Mes projets</h2>
-            
-            <article>
-                <h3>Projet 1: Page Web</h3>
-                <p>Voici un tableau d'information.</p>
+     <h1>Mes projets</h1>
+     <div class="carte">
+        <section id="work">
+            <h2>Projet 1</h2>
+            <p><h3>Je travaille sur la conception d'une page Portfolio stylé et attractif en me servant du <code>HTML</code> pour la structure et du <code>CSS</code> pour le rendre beau à voir.</h3></p>
+                
+        </section>
+     </div>
+        <div class="carte">
+        <section>   
+            <h2>Projet 2</h2>
+            <p><h3>J'ai conçu un menu pour mon restaurant fictif avec également l'utilisation du <code>HTML</code> et du <code>CSS</code> pour la structure et le style.</h3></p>
+                
+     </div>
+        </section>
 
-                <table border="5">
-                    <tr>
-                        <th>Nom</th>
-                        <th>Description</th>
-                    </tr>
-                    <tr>
-                        <td>Projet Portfolio</td>
-                        <td>Ma premiére page personnel.</td>
-                    </tr>
-                </table>
-            </article>   
-            </section>
+    
 
-    <!-- section video -->
+    <!-- section compétences et CV -->        
+        <section class="skills" id="skills">
+            <h1>Mes <strong>Compétences</strong></h1>
+
+            <div class="skill">
+              <div class="skill-name">HTML</div>
+              <div class="progress-bar"><div class="progress html"></div></div> 
+            </div>
+
+            <div class="skill">
+                <div class="skill-name">CSS</div>
+                <div class="progress-bar"><div class="progress css"></div></div>
+            </div>
+
+            <div class="skill">
+                <div class="skill-name">Javascript</div>
+                <div class="progress-bar"><div class="progress js"></div></div>
+            </div>
+        </section>
+        <section>
+            <h1>Mon CV</h1>
+            <p>Vous pouver télécharger mon CV ci-dessous.</p>
+            <a href="CV.pdf" class="download" download> télécharger mon CV</a>
+
+            <!-- section video -->
         <h3>Vidéo intégrée</h3>
-        <video width="320" height="240" controls> 
-            <source src="vd9" type="video/mp4">
+        <p>Voici un extrait de mon code en video👇</p>
+        <video width="400" height="400" controls> 
+            <source src="vdo.MOV" type="video/mp4">
             Votre navigateur ne supporte pas la vidéo.
         </video>
+        </section>
 
-    <!-- section résumé -->        
-        <section id="Résumé"
->
-            <h2>Mon CV</h2>
-            <p>Vous pouver télécharger mon CV ci-dessous.</p> 
-            <a href="CV.pdf" download> télécharger mon CV</a>
-        </section> 
     <!-- section contact -->          
         <section id="contact">
-        <h2>Contactez-moi</h2>
+        <h1>Contactez-moi</h1>
         
         <form>
             <label for ="name">Nom:</label><br>

@@ -1,0 +1,238 @@
+
+
+/* Changement de la police en roboto */
+body {
+    font-family: "roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+/* Couleur de fond principale */
+body {
+    background: linear-gradient(135deg, #e0f7fa, #80deea);
+    color: #222;
+}
+
+/* ---- Section barre de navigation ---- */
+.nav {
+    z-index: 1000;
+    top: 40px;
+    right: 20px;   
+}
+/* Position et taille de la barre */
+.nav {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 70px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    margin-right: 0;
+    padding: 0 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #0097a7;
+    border-radius: 10px;
+    backdrop-filter: blur(4px); 
+    
+}
+/* Taille et forme du logo */
+.nav .logo {
+    font-size: 30px;
+    font-weight: 700;
+    padding: auto;   
+}
+
+/* Liste des élèments de la barre */
+.nav ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    gap: 10px;
+    
+}
+/* Les élèments de la listes */
+.nav ul li {
+    list-style: none;
+    margin: 0;
+
+} 
+
+.nav ul li a {
+    font-size: 20px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #000;
+    transition: .5s;   
+}
+
+/* Couleur de l'animation */
+.nav ul li:hover a {
+    color: #25aafc;
+}
+/* ---- Section de l'accueil ---- */ 
+.home { 
+    display: flex;
+    align-items: center;
+    padding: 60px 9% 0;
+    height: 100vh;
+    background: 20deg, #F8F8FF 0%, #38BDF8 50%;
+}
+/* Taille du nom */
+.home-info h1 {
+    font-size: 55px;
+}
+/* Rends l'ecriture transparent */
+.home-info h2 span {
+    display: inline-block;
+    color: transparent;
+    -webkit-text-stroke: .7px #000;
+   
+}
+
+/* Section des Icons */
+.icons .sci {
+    margin-left: 20px;
+}
+/* Forme des icons */
+.icons .sci a {
+    display: inline-flex;
+    padding: 8px;
+    border: 2px solid #adcdd7;
+    font-size: 20px;
+    color:#000;
+    border-radius: 50%;
+    margin: 0 8px;
+    transition: .5s;
+    
+}
+/* Rends les icons transparent */
+.icons .sci a:hover {
+    background: transparent;
+    color: #000;
+    box-shadow: 0 0 10px #adcdd7;
+}
+
+.photo-box {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    justify-content: center;       
+}
+/* Position et Taille du conteneur */
+.photo-container {
+    width: 350px;
+    height: 350px;
+    background: #dbd7e1e8;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+       
+}
+.photo-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Position et taille de l'image */   
+.photo-img {
+    position: relative;
+    top: 7%;
+    left: 75%;
+    transform: translateX(-50%);
+    border-radius: 30%;
+    
+
+    width: 220px;
+    height: auto;
+
+    z-index: 2;
+
+}
+/* ---- Section projet ---- */
+.carte {
+    border: 2px solid #25aafc;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 40px;
+    background-color: #0097a7;
+}
+.carte:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+    transform: translateY(-5px);
+    transition: all 0.3s ease;
+}
+
+/* Zone de téléchargement du CV */
+.download {
+    display: inline-block;
+    background: #0097a7;
+    color: #adcdd7;
+    box-shadow: 0 0 10px;
+    border: 2px solid #adcdd7;
+    font-size: 16px;
+    font-weight: 600;
+    transition: .5s;
+    padding: 10px 30px;
+    border-radius: 40px;
+}
+
+/* Apparence du button cliquable du CV */
+.download:hover {
+    background: transparent;
+    box-shadow: none;
+    color: #000;
+}
+
+/* ---- Section compétences ---- */
+.skill {
+    margin-bottom: 1.5rem;
+}
+.skill-name {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    letter-spacing: 1px;
+} 
+
+/* Barre de progression des compétences */
+.progress-bar {
+    background: #333;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 12px;
+}
+.progress {
+    height: 100%;
+    background: linear-gradient(20deg, #ff4d4d, #06bace);
+    width: 0;
+    border-radius: 10px;
+    transition: width 1s ease;
+}
+.progress.html { width: 95%;}
+.progress.css { width: 70%;}
+.progress.js { width: 0%;}
+ 
+
+/*---- Section du formulaire ---- */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+input, textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+
+
+
+
